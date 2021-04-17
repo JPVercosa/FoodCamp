@@ -1,0 +1,240 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.site-wrapper {
+    overflow-x: hidden;
+}
+
+h1 {
+    font-family: 'Righteous', cursive;
+    color: white;
+    font-size: 28px;
+
+}
+
+h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: white;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: red;
+    padding: 8px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
+h3 {
+    padding: 8px 0;
+    margin-left: 5px;
+    font-size: 22px;
+    font-weight: 400;
+
+}
+
+
+.flex-div{ 
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   align-items: center;
+   overflow-x: auto;
+   padding-left: 10px;
+}
+
+.card {
+    min-width: 120px;
+    max-width: 120px;
+    height: 80%;
+    background-color: white;
+    border-radius: 12px;
+    box-sizing: border-box;
+    margin-right: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 0 0 auto;
+}
+
+/* .main-dish .card:last-of-type{
+    margin-right: auto;
+} */
+
+/* .drink .card:last-of-type{
+
+}
+
+.dessert .card:last-of-type{
+
+} */
+
+.img {
+    min-height: 60px;
+    border-radius: 12px;
+    background-image: url('./strognoff.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 8px;
+}
+
+.img2 {
+    min-height: 60px;
+    border-radius: 12px;
+    background-image: url('./cheeseburguer.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 8px;
+}
+
+.img3 {
+    min-height: 60px;
+    border-radius: 12px;
+    background-image: url('./coca.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 8px;
+}
+
+.img4 {
+    min-height: 60px;
+    border-radius: 12px;
+    background-image: url('./pudim.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 8px;
+}
+
+.name {
+    font-size: 0.9em;
+    font-weight: 700;
+}
+
+.description {
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.price {
+    font-size: 0.9em;
+    font-weight: 400;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: red;
+    padding: 8px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    min-height: 40px;
+    height: fit-content;
+    min-width: 160px;
+    max-width: 250px;
+    padding: 0 30px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+/* Classes reutilizáveis: */
+.selected {
+    border: solid 5px lightgreen; /* px borda + px padding = px padding .card */
+    padding: 5px;
+
+}
+
+ion-icon {
+    align-self: flex-end;
+    color: lightgreen;
+    display: none;
+
+}
+
+.show {
+    position: absolute;
+    display: inherit;
+    top: 280px
+
+}
+
+.margin-top{
+    margin-top: 60px /* Deve ser igual a altura do header */
+
+}
+
+.margin-bot{
+    margin-bottom: 60px /* Deve ser igual a altura do footer */
+
+}
+
+.bold {
+    font-family: 'Roboto', sans-serif;
+}
+
+.bgwh{
+    background-color: rgb(230,230,230);
+    width: 100%;
+    height: 250px;
+}
+
+
+
