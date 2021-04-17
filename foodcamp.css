@@ -66,6 +66,7 @@ h2{
     color: white;
 }
 
+
 header {
     position: fixed;
     top: 0;
@@ -75,6 +76,7 @@ header {
     padding: 8px;
     box-sizing: border-box;
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    z-index: 1;
 }
 
 h3 {
@@ -109,18 +111,6 @@ h3 {
     justify-content: space-between;
     flex: 0 0 auto;
 }
-
-/* .main-dish .card:last-of-type{
-    margin-right: auto;
-} */
-
-/* .drink .card:last-of-type{
-
-}
-
-.dessert .card:last-of-type{
-
-} */
 
 .img {
     min-height: 60px;
@@ -173,6 +163,15 @@ h3 {
     font-weight: 400;
 }
 
+.show {
+    display: initial !important;
+}
+
+.price .icon {
+    padding-left: 30px;
+    display: none;
+}
+
 footer{
     position: fixed;
     bottom: 0;
@@ -195,6 +194,49 @@ footer{
     background-color: white;
 }
 
+.popup-wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+    background-color: rgba(30 30 30 / 70%);
+    /* z-index: 2; */
+}
+
+.popup {
+    margin:  auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 40%;
+    width: 320px;
+    height: 180px;
+    padding: 30px;
+    padding-bottom: 40px;
+    border: solid 1px black;
+    background-color:white;
+    border-radius: 12px;
+}
+
+.popup p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    margin: 5px 0;
+}
+
+.popup button {
+    padding: 5px;
+}
+
+.align-rigth {
+    float: right;
+}
+
+
 /* Classes reutilizáveis: */
 .selected {
     border: solid 5px lightgreen; /* px borda + px padding = px padding .card */
@@ -205,15 +247,10 @@ footer{
 ion-icon {
     align-self: flex-end;
     color: lightgreen;
-    display: none;
-
 }
 
 .show {
-    position: absolute;
     display: inherit;
-    top: 280px
-
 }
 
 .margin-top{
@@ -233,8 +270,14 @@ ion-icon {
 .bgwh{
     background-color: rgb(230,230,230);
     width: 100%;
-    height: 250px;
+    height: 300px;
 }
+
+.text-justify {
+    text-align: justify;
+    width: 100%;
+}
+
 
 
 
